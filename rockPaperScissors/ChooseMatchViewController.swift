@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChooseMatchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
