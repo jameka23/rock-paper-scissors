@@ -9,9 +9,15 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    var userChoice: String!
+    var computerChoice: String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // test to make sure we are getting the correct choice
+        print(userChoice!)
         // Do any additional setup after loading the view.
     }
     

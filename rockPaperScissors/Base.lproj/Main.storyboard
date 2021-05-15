@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnd-zs-Vhq">
-                                <rect key="frame" x="151" y="278" width="116" height="65"/>
+                                <rect key="frame" x="151" y="278" width="122" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Rock" image="rock"/>
+                                <state key="normal" image="rock"/>
                                 <connections>
                                     <action selector="rockAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="yjN-2h-YGv"/>
                                 </connections>
@@ -27,9 +27,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-9m-tVE">
                                 <rect key="frame" x="151" y="392" width="122" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Paper" image="paper"/>
+                                <state key="normal" image="paper"/>
                                 <connections>
                                     <action selector="paperAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="yYh-CQ-mPR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jk6-cE-bP5" userLabel="Scissors Button">
+                                <rect key="frame" x="175" y="513" width="75" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="scissors"/>
+                                <connections>
+                                    <segue destination="tmZ-hy-ya8" kind="presentation" identifier="choiceMade2" id="Ces-Q6-Qgu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,9 +70,13 @@
             <point key="canvasLocation" x="706" y="73"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nyN-r1-gta"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="paper" width="75" height="65"/>
         <image name="rock" width="75" height="65"/>
+        <image name="scissors" width="75" height="65"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
