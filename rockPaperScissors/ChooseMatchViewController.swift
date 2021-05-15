@@ -9,11 +9,25 @@ import UIKit
 
 class ChooseMatchViewController: UIViewController {
 
+    //declare outlets
+    
+    @IBOutlet weak var rockButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
+    // action for rockButton CODE ONLY segue
+    
+    @IBAction func rockAction() {
+        // define the controller to transition to 
+        let resultsController = storyboard?.instantiateViewController(identifier: "ResultsViewController") as! ResultsViewController
+        
+        // perform the transition to resultsController
+        present(resultsController, animated: true, completion: nil)
+    }
 }
 
