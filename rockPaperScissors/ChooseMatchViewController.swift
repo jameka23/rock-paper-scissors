@@ -12,7 +12,7 @@ class ChooseMatchViewController: UIViewController {
     //declare outlets
     
     @IBOutlet weak var rockButton: UIButton!
-    
+    @IBOutlet weak var paperButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,13 @@ class ChooseMatchViewController: UIViewController {
         
         // present the resultsController
         present(resultsController, animated: true, completion: nil)
+    }
+    
+    // action for paperButton
+    @IBAction func paperAction(){
+        performSegue(withIdentifier: "choiceMade", sender: self)
+        
+        
     }
 }
 

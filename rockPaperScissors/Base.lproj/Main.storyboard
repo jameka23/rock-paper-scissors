@@ -17,11 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnd-zs-Vhq">
-                                <rect key="frame" x="151" y="328" width="116" height="65"/>
+                                <rect key="frame" x="151" y="278" width="116" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Rock" image="rock"/>
                                 <connections>
                                     <action selector="rockAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="yjN-2h-YGv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-9m-tVE">
+                                <rect key="frame" x="151" y="392" width="122" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Paper" image="paper"/>
+                                <connections>
+                                    <action selector="paperAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="yYh-CQ-mPR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -29,7 +37,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="paperButton" destination="ec0-9m-tVE" id="XZf-FY-bAg"/>
                         <outlet property="rockButton" destination="Fnd-zs-Vhq" id="kzN-4J-Aie"/>
+                        <segue destination="tmZ-hy-ya8" kind="presentation" identifier="choiceMade" id="nyN-r1-gta"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -41,7 +51,7 @@
             <objects>
                 <viewController storyboardIdentifier="ResultsViewController" id="tmZ-hy-ya8" customClass="ResultsViewController" customModule="rockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tiZ-Ej-7RI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="pHn-Sl-fI3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -53,6 +63,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="paper" width="75" height="65"/>
         <image name="rock" width="75" height="65"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
