@@ -23,10 +23,10 @@ class ChooseMatchViewController: UIViewController {
     // action for rockButton CODE ONLY segue
     
     @IBAction func rockAction() {
-        // define the controller to transition to 
+        // define the controller to transition to
         let resultsController = storyboard?.instantiateViewController(identifier: "ResultsViewController") as! ResultsViewController
         
-        // perform the transition to resultsController
+        // present the resultsController
         present(resultsController, animated: true, completion: nil)
     }
 }
