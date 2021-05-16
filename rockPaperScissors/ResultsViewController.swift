@@ -68,15 +68,15 @@ class ResultsViewController: UIViewController {
             
         }else if computerChoice == "scissors" && userChoice == "rock"{
             self.resultsPic.image = UIImage(named: "RockCrushesScissors")
-            self.resultsLabel.text = "You Win"
+            self.resultsLabel.text = "You Win!"
             
         }else if computerChoice == "scissors" && userChoice == "paper"{
             self.resultsPic.image = UIImage(named: "ScissorsCutPaper")
-            self.resultsLabel.text = "You Lose"
+            self.resultsLabel.text = "You Lose!"
             
         }else if computerChoice == "paper" && userChoice == "scissors"{
             self.resultsPic.image = UIImage(named: "ScissorsCutPaper")
-            self.resultsLabel.text = "You Win"
+            self.resultsLabel.text = "You Win!"
             
         }
     }
